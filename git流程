@@ -1,0 +1,101 @@
+1.设置用户名
+git config --global user.name "cxlbetter"
+2.设置用户名邮箱
+git config --global user.email "cxlbetter@163.com"
+3.查看设置
+git config --list
+
+脚下留心：该设置在github主页显示谁提交了该文件
+
+初始化一个新的git仓库
+1.创建一个文件夹
+mkdir test
+2.初始化
+:cd test
+:git init
+如果看不到.git文件，可以显示隐藏文件
+
+
+:touch 1.txt(在初始化文件下)
+:git status
+:git add 1.txt
+:git status
+:git commit -m "1.txt文件"
+:git status
+
+修改文件
+:vi 1.txt(进入修改保存退出)
+:git status
+:git add 1.txt
+:git status
+:git commit -m "第一次修改1.txt文件"
+:git status
+
+删除文件
+1.删除文件
+:rm 1.txt
+2.从git中删除文件
+:git rm 1.txt
+3.提交文件
+:git commit -m "文件描述"
+:git status
+
+
+git远程仓库、
+1.将远程git项目下载到本地
+进入自己想进的目录下：git clone 仓库地址
+:vi 1.txt(进入修改保存退出)
+:git status
+:git add 1.txt
+:git status
+:git commit -m "第二次修改1.txt文件"
+:git status
+
+2.将本地代码同步到远程仓库
+:touch 3.txt
+:git add 3.txt
+:git commit -m "第三次通过git提交"
+:git push
+若无法同步，或者没有权限，进入vi .git/config
+将url=https://github.com/用户名/仓库名.git改为
+url=https://用户名：密码@github.com/用户名/仓库名.git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+向仓库中提交文件
+git status: Git Repository(Git仓库)
+
+git commit -m "文件描述"  :暂存区
+git status
+
+git add 1.txt: 工作区（working Drectory）
+git add 2.txt
+git status
+
+
+
