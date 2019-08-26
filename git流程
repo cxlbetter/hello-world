@@ -41,15 +41,19 @@ mkdir test
 :git status
 
 
-git远程仓库、
+git远程仓库
 1.将远程git项目下载到本地
-进入自己想进的目录下：git clone 仓库地址
-:vi 1.txt(进入修改保存退出)
+在github上新建一个仓库，或者找到一个项目仓库，复制仓库地址
+终端输入：git clone 仓库地址，然后cd进入该仓库
+:vi 1.txt(进入修改保存退出)或者新建touch 3.txt
 :git status
 :git add 1.txt
 :git status
 :git commit -m "第二次修改1.txt文件"
 :git status
+:git push -u origin master（注：此操作目的是把本地仓库push到github上面，此步骤需要你输入帐号和密码）
+在提示下输入用户名：
+在提示下输入密码：
 
 2.将本地代码同步到远程仓库
 :touch 3.txt
